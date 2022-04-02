@@ -2,12 +2,18 @@
 
 void main() {
 
-	printf
+	/*int b = 20;
+	b = b + 1;
+	printf("b는 %d\n", ++b);
+	printf("b는 %d\n", b++);
+	printf("b는 %d\n", b);*/
 
 
 
-	/*int start = 0;
 
+
+
+	int start = 0;
 	printf("피라미드를 쌓아라. (시작: 1, 종료: 0)\n");
 	scanf_s("%d", &start);
 
@@ -29,5 +35,5 @@ void main() {
 				printf("\n");
 			}
 		}
-	}*/
+	}
 }
