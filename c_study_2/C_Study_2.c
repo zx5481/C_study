@@ -1,5 +1,11 @@
 #include <stdio.h>
 
+void blank(int floor) {
+	for (int k = 0; k < floor; k++) {
+		printf(" ");
+	}
+}
+
 void main() {
 
 	/*int b = 20;
@@ -7,11 +13,6 @@ void main() {
 	printf("b는 %d\n", ++b);
 	printf("b는 %d\n", b++);
 	printf("b는 %d\n", b);*/
-
-
-
-
-
 
 	int start = 0;
 	printf("피라미드를 쌓아라. (시작: 1, 종료: 0)\n");
@@ -29,9 +30,11 @@ void main() {
 		else {
 			printf("%d 층\n", layer);
 			for (int i = 0; i < layer; i++) {
-				for (int k = 0; k < i + 1; k++) {
+				blank(layer - i);
+				for (int j = 0; j < 2*i + 1; j++) {
 					printf("*");
 				}
+				blank(layer - i);
 				printf("\n");
 			}
 		}
